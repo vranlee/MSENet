@@ -1,8 +1,8 @@
 # MSENet: A Lightweight Network for Portable Fry Counting Devices
 The official resources of the paper：
->  [**MSENet: A Lightweight Network for Portable Fry Counting Devices**]()  
+>  [**MSENet: A Lightweight Network for Portable Fry Counting Devices**](https://doi.org/10.1016/j.asoc.2023.110140)  
 >  Weiran Li, Qian Zhu, Hanyu Zhang, Ziyu Xu, Zhenbo Li  
->  [**\[Paper: Coming Soon!\]**]() [**\[Code\]**](https://github.com/vranlee/MSENet/)
+>  [**\[Paper\]**](https://doi.org/10.1016/j.asoc.2023.110140) [**\[Code\]**](https://github.com/vranlee/MSENet/)
 
 <img src="assets/Framework.png" width="750"/>
 
