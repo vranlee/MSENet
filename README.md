@@ -6,10 +6,6 @@ The official resources of the paper：
 
 <img src="assets/Framework.png" width="750"/>
 
-<!-- ```
-#TODO Citation
-``` -->
-
 Contact: vranlee@cau.edu.cn. Any questions or discussion are welcome!
 
 -----
@@ -34,12 +30,12 @@ Contact: vranlee@cau.edu.cn. Any questions or discussion are welcome!
    NCAUF   | 3.33 | 4.58 |
 
 ## Abstract
-Fry counting is significant for the calculation of the survival rate, fish density, and the development of fishery resources. Compared with the traditional physical shunt devices, visual-based algorithms have benefits of non-restrictions of labor, minimal cost of equipment installation and maintenance. The vision-based models are preferred in applications for a mobilizable apparatus, but they generally come with massive calculations and model parameters, or poor abilities of aggregation handles and counting precision. In this paper, we propose a fry counting network named MSENet for portable fry counting devices. Firstly, we focus on a lightweight network, compress our network with simpler parameters (Params: 139.46 kB), which make our MSENet embedded into portable equipment for deeply restrictive aquaculture scenarios. Then, we utilize the Squeeze-and-Excitation block to strengthen the features of weighty channels. The visualized single-channel fry density maps are predicted by feeding the original images, and the number of fries is calculated through integration, which competently solves the issue of fry aggregation. What’s more, the model training is refined by our hyperparameter studies, the shortened preparation stage enhances the portability of our model. The results demonstrate that our lightweight MSENet outperforms in fry counting with a higher precision (3.33 MAE).
+Estimating the number of fries plays a critical role in the maintenance of fish breeding, transportation, and the preservation of marine resources in aquaculture. Generally speaking, statistics are recorded manually by fishers and government units. Manual recording is time-consuming and increases the workload of fishers. Compared with traditional physical shunt devices, visual-based algorithms have benefits such as non-restriction of labors, minimal equipment installation, and maintenance costs. However, these methods generally come with massive calculations and model parameters, or poor abilities of aggregation handles and counting precision. This paper proposes a fry counting method named MSENet for portable fry counting devices. Firstly, the lightweight network is designed with simpler parameters (Params: 139.46 kB) for portable embedding. The visualized single-channel fry density maps are predicted by feeding the original images and the number of fries is calculated through integration. Then, the Squeeze-and-Excitation block is utilized to strengthen the features of weighty channels. The model training is refined by hyperparameter studies, the shortened preparation stage enhances the portability. What’s more, a fry counting dataset NCAUF and an extra set NCAUF-EX are built for verifications of network generalization. The results demonstrate that the lightweight MSENet outperforms in fry counting with higher precision and competently solves the issue of fry aggregation (MAE: 3.33).
 
 ## Contributions
-+	Our lightweight (Params: 139.46 kB) model compresses the parameters and calculations virtually, which is feasible to incorporated in a mobile device in aquaculture. We verify in Section 3 that our model outperforms typical counting algorisms.
-+	To strategically enhance the precision of the vision-based fry counting approach, the Squeeze-and-Excitation block is embedded into the network; to tackle the small-scale fry aggregations, density map regression is utilized for apportioning of fry aggregation.
-+	We design a lightweight network MSENet especially for portable devices of fry counting in feeding pond scenarios. The hyperparameters of our network are optimized to refine the training stage for migrations of aquaculture scenarios.
++	A lightweight (Params: 139.46 kB) network MSENet is designed especially for portable devices of fry counting in feeding pond scenarios. The model is implemented based on the density map regression, which efficiently handles the adhesion phenomenon in high-density scenarios.
++	The Squeeze-and-Excitation block is embedded into the network, the precision is further improved (MAE: 3.33) by maintaining the model lightweight.
++	A fry counting dataset NACUF is built and augmented with an extra set NCAUF-EX to verify the generalization of the fry count model.
 
 ## Preparation
 + **Step.1** Clone this repo.
