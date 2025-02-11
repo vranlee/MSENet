@@ -70,3 +70,6 @@ Class  | Sample |  Class  | Sample |  Class  | Sample |
 ## Recommended Resources
 + We recommend a third-party counting framework: [gjy3035/C-3-Framework](https://github.com/gjy3035/C-3-Framework).  
 Thanks for their wonderful works!
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=vranlee/MSENet&type=Date)](https://star-history.com/#vranlee/MSENet&Date)
